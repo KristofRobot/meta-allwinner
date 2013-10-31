@@ -9,10 +9,12 @@ PV = "1.0"
 PR = "r1"
 
 SRC_URI = "git://github.com/linux-sunxi/sunxi-boards.git;protocol=git"
+SRC_URI += "file://cubieboard2.fex"
 
 S = "${WORKDIR}/git"
 SUNXI_FEX_FILE_olinuxino-a10s = "sys_config/a10s/a10s-olinuxino-m.fex"
-SUNXI_FEX_FILE_cubieboard2 = "sys_config/a20/cubieboard2.fex"
+#SUNXI_FEX_FILE_cubieboard2 = "sys_config/a20/cubieboard2.fex"
+SUNXI_FEX_FILE_cubieboard2 = "${WORKDIR}/cubieboard2.fex"
 
 SUNXI_FEX_BIN_IMAGE = "fex-${MACHINE}-${PV}-${PR}.bin"
 SUNXI_FEX_BIN_IMAGE_SYMLINK = "fex-${MACHINE}.bin"
