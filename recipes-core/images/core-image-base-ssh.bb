@@ -1,7 +1,8 @@
-DESCRIPTION = "A console-only image that fully supports the target device \
+DESCRIPTION = "A small image that fully supports the target device \
 hardware and runs an openssh server."
 
-IMAGE_FEATURES += "splash ssh-server-openssh package-management"
+IMAGE_INSTALL = "packagegroup-core-boot ${ROOTFS_PKGMANAGE_BOOTSTRAP} ${CORE_IMAGE_EXTRA_INSTALL}"
+IMAGE_FEATURES += "ssh-server-openssh package-management"
 
 LICENSE = "MIT"
 
