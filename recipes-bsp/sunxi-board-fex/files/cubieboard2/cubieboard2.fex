@@ -598,6 +598,11 @@ tvout_channel_num = 1
 tvin_used = 0
 tvin_channel_num = 4
 
+[pwm0_para]
+pwm_used = 1
+pwm_period = 20
+pwm_duty_percent = 50
+
 [sata_para]
 sata_used = 1
 sata_power_en = port:PB08<1><default><default><0>
