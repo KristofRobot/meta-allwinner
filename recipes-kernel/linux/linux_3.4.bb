@@ -20,4 +20,5 @@ SRC_URI += "git://github.com/linux-sunxi/linux-sunxi.git;branch=sunxi-3.4;protoc
 
 S = "${WORKDIR}/git"
 
-INSANE_SKIP_kernel-dev = "debug-files debug-deps arch"
+INSANE_SKIP_kernel-dev = "debug-files arch ldflags"
+FILES_kernel-dev += "/usr/src/debug"  
