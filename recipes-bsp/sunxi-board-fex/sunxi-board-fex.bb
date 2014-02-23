@@ -8,7 +8,6 @@ PV = "1.0"
 PR = "r6"
 
 SRC_URI = "git://github.com/linux-sunxi/sunxi-boards.git;protocol=git"
-SRC_URI += "file://cubieboard2.fex"
 SRCREV = "0131ba10dddc0c25639fceb25e4df20553f4f61d"
 
 S = "${WORKDIR}/git"
@@ -18,8 +17,7 @@ SUNXI_FEX_FILE_olinuxino-a10s = "sys_config/a10s/a10s-olinuxino-m.fex"
 SUNXI_FEX_FILE_olinuxino-a13 = "sys_config/a13/a13-olinuxino.fex"
 SUNXI_FEX_FILE_olinuxino-a20 = "sys_config/a20/a20-olinuxino_micro.fex"
 SUNXI_FEX_FILE_cubieboard = "sys_config/a10/cubieboard.fex"
-#SUNXI_FEX_FILE_cubieboard2 = "sys_config/a20/cubieboard2.fex"
-SUNXI_FEX_FILE_cubieboard2 = "../cubieboard2.fex"
+SUNXI_FEX_FILE_cubieboard2 = "sys_config/a20/cubieboard2.fex"
 SUNXI_FEX_FILE_cubietruck= "sys_config/a20/cubietruck.fex"
 
 SUNXI_FEX_BIN_IMAGE = "fex-${MACHINE}-${PV}-${PR}.bin"
